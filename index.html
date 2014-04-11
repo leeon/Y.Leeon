@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/> 
+<title>Y.Leeon</title>
+
+
+<!-- Random a photo for lucky user -->
+<script language="JavaScript">
+    var randnum = Math.random();
+    var total = 2;
+    var rand1 = Math.round(randnum * (total-1)) + 1;
+    images = new Array;
+    images[1] = "black";
+    images[2] = "think";
+      
+    var image = 'http://cdn4atleeon.qiniudn.com/home_' + images[rand1];
+
+    if ((screen.width < 480) || (screen.height < 480)) {
+    	image += '_vert';
+    }
+
+    image += '.jpg';
+
+</script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Set the backgroud image -->
+        <script language="JavaScript">
+        document.write('<div class="bigImage" style="background-image: url(' + image + ');">')
+        </script>
+
+        <div class="content">
+            <div class="name"><span class="at">Y</span>Leeon</div>
+
+            <ul class="list">
+                <a href="http://www.medium.com/@atleeon" target="_BLANK"><li>Writes on Medium.</li></a>
+                <a href="https://github.com/leeon" target="_BLANK">Code on Github</a>
+                <a href="http://www.twitter.com/atleeon" target="_BLANK"><li>Dev Log on Twitter.</li></a>
+                <a href="http://www.octsky.com" target="_BLANK"><li>Those Old Things.</li></a>
+            </ul>
+        </div>
+    </div>
+  </body>
+
+</html>
