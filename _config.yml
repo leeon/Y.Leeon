@@ -1,0 +1,15 @@
+markdown:         kramdown
+highlighter:      pygments
+permalink:        /:categories/:year/:month/:day/:title/
+
+title:            "atleeon.com"
+url:              http://atleeon.com
+feed:             /feed.xml
+author:
+    name:         atleeon
+    twitter:      twitter.com/atleeon
+    key:          atleeon
+description:      "Leeon"
+copyright:        "CopryRight atleeon 2014-2014 by Gitcafe and Jekyll, Skin by Guojing"
+headdesc:         "Write 李阳 & Theme Guojing"
+headkeys:         "设计,摄影,开发"

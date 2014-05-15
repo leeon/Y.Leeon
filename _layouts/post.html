@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<!-- <html> -->
+<head>
+  <title>{{ page.title }}|{{ site.title }}</title>
+  {% include header.html %}
+  <script type="text/javascript">
+        var BYB = {};
+  </script>
+  <script type="text/javascript">
+    BYB.includeScript = function(file,callback){
+    var _doc = document.getElementsByTagName('head')[0];
+    var js = document.createElement('script');
+    js.setAttribute('type', 'text/javascript');
+    js.setAttribute('src', file);
+    _doc.appendChild(js);
+    
+    if (!/*@cc_on!@*/0) { //if not IE
+    //Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
+    js.onload = function () {
+    callback();
+    }
+    } else {
+    //IE6、IE7 support js.onreadystatechange
+    js.onreadystatechange = function () {
+    if (js.readyState == 'loaded' || js.readyState == 'complete') {
+    callback();
+    }
+    }
+    }
+    return false;
+    }
+  </script>
+  <meta content="{{ page.description }}" name="description"/>
+  <meta content="{% for tag in page.tags %}{{ tag }},{% endfor %}" name="keywords"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+</head>
+<body>
+<div class="container">
+
+{% include banner.html %}
+
+<div class="main clearfix">
+  <div class="title">{{ page.title }}</div>
+
+  <div class="content {{ page.categories }}_content_css">
+    {{ content }}
+  </div>
+
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a></div>
+
+
+  <div class="forb">
+  {% for tag in page.tags %}
+  <a href="/tags/#{{ tag }}">#{{ tag }}</a>
+  {% endfor %}
+
+
+
+  </div>
+
+
+  <div class="suggest">
+    {% if page.previous %}
+        <a href="{{page.previous.url}}" class="pre">&lt; {{page.previous.title}}</a>
+    {% endif %}
+    
+    {% if page.next %}
+        <a href="{{page.next.url}}" class="next">{{page.next.title}} &gt;</a>
+    {% endif %}
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","renren","douban"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+{% include footer.html %}
+
+</body>
+</html>

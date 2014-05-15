@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>{{ site.title }}</title>
+  {% include header.html %}
+  <meta content="{{ site.headdesc }}" name="description"/>
+  <meta content="{{ site.headkeys }}" name="keywords"/>
+</head>
+<body>
+
+<div class="container">
+
+{% include banner.html %}
+
+<div class="main clearfix">
+{{ content }}
+</div>
+</div>
+
+{% include footer.html %}
+<!-- 腾讯分析 -->
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=34109896" charset="UTF-8"></script>
+</body>
+</html>
+
