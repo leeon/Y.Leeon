@@ -1,8 +1,12 @@
 ---
-layout:     page
+layout:     note
 title:      面向对象
 description: Python中的面向对象，类的属性和方法
 ---
+
+
+* 目录(this text will be scraped).
+{:toc}
 
 
 ##面向对象编程

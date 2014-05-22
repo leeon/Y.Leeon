@@ -18,7 +18,19 @@
 </div>
 </div>
 </div>
-{% include footer.html %}
+
+
+<script>
+    $( document ).ready(function() {
+        var toc = $("<div id='toc'><div>");
+        var list = $("#markdown-toc")
+        $(".main").append(toc);
+        list.appendTo(toc);
+        toc.show();
+});
+</script>
+
+
 </body>
 </html>
 

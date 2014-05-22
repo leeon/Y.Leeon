@@ -1,8 +1,12 @@
 ---
-layout:     page
+layout:     note
 title:      集合
 description: Python集合，列表，元组，字典
 ---
+
+
+* 目录(this text will be scraped).
+{:toc}
 
 #集合
 

@@ -1,8 +1,12 @@
 ---
-layout:     page
+layout:     note
 title:      类型
 description: Python 开发笔记基础知识
 ---
+
+
+* 目录(this text will be scraped).
+{:toc}
 
 #数据类型
 

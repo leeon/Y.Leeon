@@ -1,5 +1,5 @@
 ---
-layout:     page
+layout:     note
 title:      Python
 description: Python 开发笔记
 ---

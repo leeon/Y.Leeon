@@ -1,8 +1,12 @@
 ---
-layout:     page
+layout:     note
 title:      工具
 description: Python中的工具Profile
 ---
+
+
+* 目录(this text will be scraped).
+{:toc}
 
 #Profile
 

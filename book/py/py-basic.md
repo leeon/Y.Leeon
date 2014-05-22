@@ -1,8 +1,11 @@
 ---
-layout:     page
+layout:     note
 title:      基础
 description: Python 开发笔记基础知识
 ---
+
+* 目录(this text will be scraped).
+{:toc}
 
 #注释
     

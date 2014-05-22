@@ -1,8 +1,12 @@
 ---
-layout:     page
+layout:     note
 title:      函数
 description: Python函数基础知识，位置参数，关键字参数，lambda表达式，装饰器
 ---
+
+
+* 目录(this text will be scraped).
+{:toc}
 
 #函数
 ##结构
