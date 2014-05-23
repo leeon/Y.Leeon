@@ -450,16 +450,40 @@ img {
 
 /*affix*/
  #toc{
-
   position: fixed;
-  left: 10px;
-  top: 30px;
+  left: 15px;
+  top: 0.1px;
   display: none;
   max-width: 700px;
   background: #FFF;
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding: 10px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 1.6rem;
+  max-width: 300px;
+}
+
+
+ul#markdown-toc{
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+ul#markdown-toc li{
+  line-height: 1.5em;
+  margin-bottom: 2px;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+ul#markdown-toc a:visited, ul#markdown-toc a:hover,ul#markdown-toc a:link{
+  color: #747f8c;
+  margin: 0 2px;
+  padding: 3px;
+}
+
+ul#markdown-toc a:hover{
+  color: #db4937;
 }
 
 

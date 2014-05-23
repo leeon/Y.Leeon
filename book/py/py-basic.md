@@ -63,7 +63,7 @@ input和raw_input的主要区别是后者将输入转为String，而前者要求
 
 #模块
 
-####import
+###import
 Python提供模块机制来组织不同文件中的代码。每一个Python文件都被视为一个模块，彼此可以进行引用。
 
     # module.py 
@@ -83,7 +83,7 @@ Python提供模块机制来组织不同文件中的代码。每一个Python文�
     my_add = module.test_add
     print my_add(1,2)
 
-####\_\_main__
+###\_\_main__
     
     #script.py
     if __name__ == "__main__":
@@ -94,7 +94,7 @@ Python提供模块机制来组织不同文件中的代码。每一个Python文�
     
     python script.py <arguments>
     
-####搜索路径
+###搜索路径
 当遇到`import someModule`语句 时，Python会进行下面的搜索，寻找模块。
 
 1. 首先会去内置模块中寻找`someModule`
@@ -108,7 +108,7 @@ Python提供模块机制来组织不同文件中的代码。每一个Python文�
 
 #控制流
 
-##赋值
+###赋值
 
 Python中没有传统语言中的变量声明，当我们第一次对一个变量进行赋值的时候，就表示声明了一个变量。Python在提供单个变量赋值的同时，还支持多个变量的一起赋值，比如：
 
@@ -118,7 +118,7 @@ Python中没有传统语言中的变量声明，当我们第一次对一个变�
 
 
 
-##逻辑
+###逻辑
 其中逻辑比较的操作符包括，当比较内建类型或者常量的时候不建议使用`is`，因为`is`比较的是对象的虚拟内存地址，内建类型经常被优化，比如两个值相同的整形变量会指向同一块地址，因此`is`会返回`True`.
 
     a > b
@@ -133,7 +133,7 @@ Python中没有传统语言中的变量声明，当我们第一次对一个变�
 
 逻辑的与或非分别用 `and`, `or `,`not`表示，Python中同样采用`逻辑短路`原则，即`and`前的布尔值为假，则后面的条件表达式不再被执行。
 
-##if/else/elif
+###if/else/elif
 
     age = input('How old are you? ')
     if age > 20:
@@ -143,12 +143,12 @@ Python中没有传统语言中的变量声明，当我们第一次对一个变�
     else:
         print 'we are the same age!'
 
-##while
+###while
 
     while condtion:
         pass
 
-##for
+###for
 
 基础用法，遍历一个列表
     
@@ -158,7 +158,7 @@ Python中没有传统语言中的变量声明，当我们第一次对一个变�
 
 高级用法：TODO itertools
 
-##break/continue
+###break/continue
 同其他语言一样：
 
 + `break` 不再执行当前循环体内下面的语句，循环结束

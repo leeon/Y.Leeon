@@ -23,7 +23,7 @@ python中的序列主要有list和tuple,后者是一种不可变的list。list�
 
     aList = [] #set a new empty list
     
-##索引
+###索引
 序列支持正向和负向的索引,`0`表示左边第一个元素，`-1`表示从右边数第一个元素。比如：
 
     aList = ['a','b','c','d']
@@ -31,7 +31,7 @@ python中的序列主要有list和tuple,后者是一种不可变的list。list�
     aList[-1] #'d'
     'hello'[2] #also support this way , 'l'
 
-##切片
+###切片
 分片（slice）操作是为了获取序列中的某一个子序列，其基本语法是:
 
 `'squence'[start:end:step]`
@@ -60,7 +60,7 @@ python中的序列主要有list和tuple,后者是一种不可变的list。list�
     
     
 
-##代码示例
+###代码示例
 
      # coding=utf-8
      # Filename : list.py
@@ -126,18 +126,19 @@ python中的序列主要有list和tuple,后者是一种不可变的list。list�
 
 > 表和元组的区别 :前者可变，后者只读
 
+-----
 
 
 #字典
 
-##创建
+###创建
 字典是python中目前仅有的内置mapping类型。其基本数据结构为{key:value..}，是一种`无序`的存储结构。其中key是不可变类型，而value可以是任何类型。
 
     aPerson = {} # set a new empty dict
     aPerson = {'name':'sara','age':22} #set a new dict
     aPerson = dict([('name','sara'),('age',22)]) # set dict from a list
 
-##基本使用
+###基本使用
     
     aPerson = {'name':'sara','age':22}
     len(aPerson) # return the number of keys in a dict
@@ -146,7 +147,7 @@ python中的序列主要有list和tuple,后者是一种不可变的list。list�
     del aPerson['age'] # delete a particular key
     'age' in aPerson # True
 
-##內置函数
+###內置函数
     
     aPerson = {'name':'sara','age':22}
     aPerson.get('name','someone') 
@@ -159,7 +160,7 @@ python中的序列主要有list和tuple,后者是一种不可变的list。list�
     aPerson.fromkeys([1,2,3],0) # set a dict from a list of keys with default value 0
     aPerson.copy() #swallow copy of a dict
     
-##遍历
+###遍历
 
 基本有兩種實現方式：一是遍歷`items()`生成的list,二是通過iteritems()生成的迭代器，後者效率更高。
 
@@ -167,8 +168,9 @@ python中的序列主要有list和tuple,后者是一种不可变的list。list�
     for k,v in aPerson.iteritems():
         print k,v
 
+------
 
-##集合
+#集合
 
 Python中的集合和数学中集合的概念相同，具有**无序性**和**唯一性**，它支持添加、遍历、判断是否包含某个元素等操作，但是不支持索引、分片等序列化的操作。
 

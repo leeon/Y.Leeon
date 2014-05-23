@@ -8,7 +8,7 @@ description: Python 开发笔记基础知识
 * 目录(this text will be scraped).
 {:toc}
 
-#数据类型
+#基本数据类型
 
 
 Python提供numerics, sequences, mappings, files, classes, instances 和 exceptions等内置类型。
@@ -16,7 +16,7 @@ Python提供numerics, sequences, mappings, files, classes, instances 和 excepti
 每个对象主要由三个要素组成，分别是Type,Id和Value。比如用等值符比较的时候，`is`比较的是两个对象的id,而`==`比较的是两个对象的value是不是相等。
 
 
-##布尔
+###布尔
 
 `True`和`False`两个内置类型用来表示布尔值，除此之外：
 
@@ -27,15 +27,17 @@ Python提供numerics, sequences, mappings, files, classes, instances 和 excepti
 + An empty dictionary ({}) is false; all other dictionaries are true.
 
 
-##数字类型
+###数字类型
 Python中包含，整型、长整型、浮点和复数
 
 
-##序列类型
+###序列类型
 Python有七种基本的序列类型，包括strings, Unicode strings, lists, tuples, bytearrays, buffers, 和 xrange objects
 
+-----
 
-##迭代器和生成器
+
+#迭代器和生成器
 
 ###迭代器
 迭代器用于封装一个集合，并提供统一的方法进行遍历处理。Python中定义了Iterable和Iterator.
@@ -77,7 +79,7 @@ Iterator就是一个包含`next`方法的对象，每次调用返回一个对象
 
 Python中字符串属于序列类型，使用`"`或者`'`进行包围,这意味着字符串支持序列的操作，
 
-##编码
+###编码
 Python的对象有两种编码表示，一种是str，属于8bit的字节流，另一种是unicode编码，Python内部用这种形式表示。unicode序列以`u`开头，比如`u"name"`。
 
 因此`decode`方法是将其他字符编码解码为`nicode`，而`encode`是将unicode编码为其他编码。下面两种硬编码定义中文的例子：
@@ -88,12 +90,12 @@ Python的对象有两种编码表示，一种是str，属于8bit的字节流，�
 第一种的中文实际编码会根据当前文件的编码而决定，编码解码需要知道具体的编码，而后者自动编码为Python的内置编码unicode，因此更值得推荐。
 
 
-##转换
+###转换
 其他数据类型转换为String可以使用Python的两个内置函数，`str()`和`repr()`前者主要用于将一个对象转换为方便人可读的字符串，而后者用于将对象转换为方便解释器可读的字符串，对于很多类型，repr方法会尝试转成`eval`方法可以接受的参数。同时给一个class编写`__repr__`方法可以返回类似自定义的字符串，类似Java在类中重写`toString`方法。
 
 
 
-##操作
+###操作
 String支持很多和序列相同的操作。常用的操作有：
 
 ####str.count(sub[, start[, end]])
