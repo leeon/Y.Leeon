@@ -1,7 +1,11 @@
 <div class="footer">
+
+{% if site.debug %}
+<p> in debug mode </p>
+{% else %}
 <!-- ana -->
 <script type="text/javascript" src="http://tajs.qq.com/stats?sId=34109896" charset="UTF-8"></script>
-
+{% endif %}
 
 {% if page.disable_footer %}
 <!-- footer disabled-->
