@@ -9,7 +9,7 @@ description: 关于我
 ### Where am I ###
 
 Code on [Github](http://www.github.com/leeon)
-, Photo on [Lofter](image.atleeon.com)
+, Photo on [Lofter](http://image.atleeon.com)
 , Talk on [Weibo](http://weibo.com/843168299)
 , Log on [Twitter](https://twitter.com/atleeon)
 

@@ -7,9 +7,17 @@ description: Leeon技术笔记
 积累的一些技术笔记
 
 [Python](./py/)
-[JavaScript](./js/)
+
+<!-- [JavaScript](./js/) -->
+
+<!-- [C++](./cpp) -->
+
 [Android](./android)
+
+<!-- [iOS](./ios) -->
+
 [运维](./ops/)
+
 [Issues](./issues)
 
 
