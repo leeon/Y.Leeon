@@ -11,7 +11,9 @@ tags: JavaScript 事件 event
 本文描述的 事件 是W3C定义的API, 这些事件应用在JavaScript对于DOM的操作（Node.js中也有相应的事件机制）。事件主要是监控发生在DOM元素上面的行为，当一个元素的状态改变的时候，比如点击了页面上的某个标签，就会触发事件。
 
 <!-- break -->
+
 ##Basic Concepts
+
 ###document
 首先回顾一下DOM(Document Object Model)相关的一些基本概念。HTML文档是一棵树的形式组织的，不同的标签被转换成一个节点,这是有了这些节点，JavaScript才能自如的操作页面元素。比如下面的代码：
 

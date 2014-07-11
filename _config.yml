@@ -14,4 +14,4 @@ copyright:        "CopryRight Leeon 2014-2014"
 headdesc:         "李阳 leeon的博客，关于摄影、设计、编程。WI输入法开发者，就读于哈尔滨工业大学,腾讯实习生"
 headkeys:         "李阳,博客,设计,摄影,开发,Yoiware,WI输入法"
 footdesc:         "Write 李阳 & Theme Guojing"
-debug:            true
+debug:            false

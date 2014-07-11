@@ -8,7 +8,7 @@ description: Leeon技术笔记
 
 [Python](./py/)
 
-<!-- [JavaScript](./js/) -->
+[Web](./web/)
 
 <!-- [C++](./cpp) -->
 
@@ -17,6 +17,8 @@ description: Leeon技术笔记
 <!-- [iOS](./ios) -->
 
 [运维](./ops/)
+
+[开发](./dev/)
 
 [Issues](./issues)
 
