@@ -112,10 +112,15 @@ description: 性感的编辑器
 Git增强插件，可以显示那些代码是相对于版本库变化的
 
 
-## Tips
+# Tips
 
 > [利用Sublime Text 2 查看开源代码]() 
 
 
+# Issues
+
+###有时插件失效
+
+使用Package Control 的Enable Package 重新唤醒插件。
 
 

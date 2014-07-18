@@ -3,7 +3,8 @@ layout:     page
 title:      关于
 description: 关于我
 ---
-就读于哈尔滨工业大学, 热爱摄影, 阅读, 应用开发。WI输入法团队负责人。
+
+leeon，腾讯后台工程师，独立开发者，喜欢摄影、设计和读书。
 
 
 ### Where am I ###

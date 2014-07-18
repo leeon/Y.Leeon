@@ -9,9 +9,9 @@ author:
     name:         leeon
     twitter:      twitter.com/atleeon
     key:          atleeon
-description:      "atleeon的博客"
-copyright:        "CopryRight Leeon 2014-2014"
-headdesc:         "李阳 leeon的博客，关于摄影、设计、编程。WI输入法开发者，就读于哈尔滨工业大学,腾讯实习生"
+description:      "leeon，腾讯后台工程师，独立开发者，喜欢摄影、设计和读书。"
+copyright:        "CopryRight Leeon 2014"
+headdesc:         "leeon，腾讯后台工程师，独立开发者，喜欢摄影、设计和读书。"
 headkeys:         "李阳,博客,设计,摄影,开发,Yoiware,WI输入法"
 footdesc:         "Write 李阳 & Theme Guojing"
 debug:            false

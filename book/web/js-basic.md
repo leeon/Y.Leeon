@@ -8,9 +8,7 @@ description: JavaScript 开发笔记基础知识
 {:toc}
 
 
-#Javascript基础
-
-###数据类型
+#数据类型
 
 
 JavaScript是弱类型的语言，可以通过如下方式定义一个变量：
@@ -19,7 +17,7 @@ JavaScript是弱类型的语言，可以通过如下方式定义一个变量：
 
 支持的六种数据类型有 **numbers**, **string**, **boolean**, **object**, **undefined**, **null**
 
-####undefined
+###undefined
 
 `undefined`表示没有被赋值过的变量。检查一个变量是否为undefined的时候，可以使用`===`,最佳的实践方案是，使用`typeof`来判断，避免未定义变量报错。
 
@@ -34,7 +32,7 @@ JavaScript是弱类型的语言，可以通过如下方式定义一个变量：
     if(typeof xx == 'undefined')
 
 
-####numbers:
+###numbers:
 
 `NaN`内置变量表示非数字。可以使用`isNaN()`方法判断。
 
@@ -44,7 +42,7 @@ JavaScript是弱类型的语言，可以通过如下方式定义一个变量：
     +"12";   //12 another quick way to get a number from str.
 
 
-####array
+###array
 JavaScript中的数组和Python一样，支持多种数据类型。例如：
 
     var mList = ['name',23,{type:"students"}];
@@ -54,9 +52,9 @@ JavaScript中的数组和Python一样，支持多种数据类型。例如：
 
 > object可以表示成JSON格式。
 
-###操作符
+#操作符
 
-####in
+###in
 
 in操作符的右侧必须是一个object，它用来判断右边的object是否包含左边的属性.
 
@@ -64,17 +62,18 @@ in操作符的右侧必须是一个object，它用来判断右边的object是否
 
 > 容易误用in操作符判断元素是否属于一个数组,建议使用array.indexOf(obj),该方法返回obj的下标,如果元素不存在返回-1.
 
-####delete
+###delete
 
 delete操作符删除一个object的属性.
     
     delete object.property
     delete object['property']
 
-###语句
+
+#语句
 > 语句后的`;`是可选的,感兴趣可以看[『知乎』的讨论](http://www.zhihu.com/question/20298345)
 
-#####if else
+###if else
 
     if(a > b){
         //do
@@ -82,21 +81,24 @@ delete操作符删除一个object的属性.
         //do
     }
     
-#####for
+###for
 
     for(var i = 1; i < 10; i++ ){
         //get i
     }
     
-#####for in
+###for in
+
+for in 语句的原型是 `for (var in object)`，所以是用来迭代一个对象的属性的，数组也是一个对象，下标就是数组的属性key,对应着每一个value。
 
     var mList = [1,2,3];
     for(i in mList){
         console.log(mList[i]);
     }
+
 > 注意与Python不同，JavaScript迭代的是元素的index，而不是元素本身
 
-#####while
+###while
     
     while(true){
         //do
@@ -106,10 +108,10 @@ delete操作符删除一个object的属性.
         //do
     }while(true)
     
-#####break & continue
+###break & continue
 和C语言相同，break跳出本次循环，并结束循环；continue结束本次循环，继续下一次循环
 
-#####switch
+###switch
     
     switch(n){
         case 1:
@@ -122,7 +124,7 @@ delete操作符删除一个object的属性.
         //do
     }
 
-#####try catch
+###try catch
 
     try{
         throw "myException";
@@ -131,7 +133,7 @@ delete操作符删除一个object的属性.
         handleErrors（e);
     }
 
-###作用域
+#作用域
 JavaScript的作用域与C不同，并不是以`{}`块来进行区分的，而是根据函数而确定，所以下面代码会打印5。
 
     if(true){
@@ -139,14 +141,21 @@ JavaScript的作用域与C不同，并不是以`{}`块来进行区分的，而�
     }
     log.console(a); //output 5
 
-####全局作用域
+###全局作用域
 
 + 在所有函数之外定义的变量拥有全局作用域
 + 没有使用`var`定义的变量拥有全局作用域
 
-####函数作用域
+###函数作用域
 
 指在某个函数内部定义的变量，只具有函数内的访问权限
+
+
+#更加深入的理解javascript
+
+[JavaScript中的 变量、作用域链、执行上下文](http://atleeon.com/code/2014/02/26/javascript-basic/)
+
+[JavaScript Scoping and Hoisting](http://atleeon.com/code/2014/03/06/javascript-scoping-hoisting/)
 
 
 
