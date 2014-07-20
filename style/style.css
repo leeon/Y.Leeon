@@ -1,7 +1,9 @@
 body {
   font-size: 18px;
   color: #525d67;
-  background: #f7fafb;
+  /*background: #f7fafb;*/
+  background-image: url(../images/theme/paperback.jpg);
+  /*background-size: 100%;*/
   font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
   font-size: 1.125em;
   -webkit-font-smoothing: antialiased;
@@ -49,7 +51,7 @@ hr {
   background: #FFF;
   overflow: hidden;
   padding: 20px;
-  border-radius: 0px 0px 10px 10px;
+  /*border-radius: 0px 0px 10px 10px;*/
 }
 
 .banner {

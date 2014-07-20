@@ -3,28 +3,15 @@ layout: default
 title: Leeon
 ---
 
-{% for post in site.posts %}
-{% if forloop.index == 1 %}
-    <div class="posts">
-    <div class="title">{{ post.title }}</div>
-    <div class="content">
-    {{ post.content }}
-    </div>
+<h3><strong>最新文章:</strong></h3><br>
 
-    </div>
-    {% if forloop.length > 1 %}
-        <hr>
-        <div class="eof">EOF</div>
-        <hr>
-        <h3><strong>阅读更多:</strong></h3><br>
-    {% endif %}
-{% else %}
-    {% if forloop.index <= 6 %}
+{% for post in site.posts %}
+    {% if forloop.index < 5 %}
     <div class="title justtitle"><a href="{{ post.url }}">{{ post.title }}</a></div>
     {% endif %}
-{% endif %}
 {% endfor %}
 <hr>
-<h3><strong>可能帮上忙的家伙:</strong></h3><br>
+<h3><strong>个人:</strong></h3><br>
 <div class="title justtitle"><a href="/feed.xml">订阅</a></div>
-<div class="title justtitle"><a href="/archive/">日历</a></div>
+<div class="title justtitle"><a href="/book/">技术手册</a></div>
+<div class="title justtitle"><a href="/sketch/">设计手册</a></div>

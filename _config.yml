@@ -6,12 +6,12 @@ title:            "atleeon"
 url:              http://atleeon.com
 feed:             /feed.xml
 author:
-    name:         leeon
+    name:         李陽
     twitter:      twitter.com/atleeon
     key:          atleeon
-description:      "leeon，腾讯后台工程师，独立开发者，喜欢摄影、设计和读书。"
+description:      "Leeon个人博客"
 copyright:        "CopryRight Leeon 2014"
 headdesc:         "leeon，腾讯后台工程师，独立开发者，喜欢摄影、设计和读书。"
 headkeys:         "李阳,博客,设计,摄影,开发,Yoiware,WI输入法"
-footdesc:         "Write 李阳 & Theme Guojing"
+footdesc:         "More Joy at Yoiware"
 debug:            false
