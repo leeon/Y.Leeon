@@ -1,25 +1,24 @@
 ---
 layout: page
 title: 手册
-description: Leeon技术笔记
+description: Leeon的技术手册，主要记录一些开发相关的基础知识，值得回味的地方，我会专门写文章总结。
 ---
 
-积累的一些技术笔记
+手册索引
 
-[Python](./py/)
+**[Python](./py/)**
 
-[Web](./web/)
+**[Web](./web/)** 
+
 
 <!-- [C++](./cpp) -->
 
-[Android](./android)
+**[Android](./android)** 
 
 <!-- [iOS](./ios) -->
 
-[运维](./ops/)
+**[运维](./ops/)**
 
-[开发](./dev/)
+**[开发](./dev/)**
 
-[Issues](./issues)
-
-
+**[Issues](./issues)**

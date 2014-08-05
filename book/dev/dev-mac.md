@@ -10,86 +10,59 @@ description: 使用Mac的日常
 
 #基础
 
-安装软件
+安装软件主要有四种方式：
 
 + .app文件拖拽到applications文件夹中
 + 通过AppStore
 + 通过程序自带的安装器
 + 关于Linux的安装方式
+
 > 推荐使用Homebrew进行软件包的管理，一般在`/usr/local/Cellar`目录下。可执行文件存放在`bin`下，库文件在`lib`下，其他资源文件在`share`下。
 > brew使用 --prefix安装，将上述资源文件放在一个文件夹里面。**(推荐)**
 
+----------
+
+#日常类
+
+[Alfred](http://www.alfredapp.com/) 快速打开程序的利器
+
+[Evernote](http://www.evernote.com) 笔记同步，知识管理，丰富的chrome插件支持
+
+[Mindmanager]() 强大的思维导图工具
+
+[日历]() Mac自带的日历工具，搭配exchange服务，所平台同步
+
+[Mou](http://mouapp.com/) 可视化Markdown编辑器
+
+[AirMail](http://airmailapp.info/) 最新推出的邮件客户端，做的很用心
+
+[Kindle](https://itunes.apple.com/us/app/kindle/id405399194?mt=12) 这个就不要多说了，这个方便做笔记
+
+[百度云](http://yun.baidu.com) 很好的解决了我的Mac和Windows Phone之间数据同步的问题
+
+[Lightroom](http://www.adobe.com/support/downloads/product.jsp?platform=Macintosh&product=113) 爱好摄影不可缺少
+
+[Photoshop](http://www.adobe.com/support/downloads/product.jsp?product=39&platform=Macintosh) 神器
+
+-----------
+
+#开发类
+[Sublime Text 3](http://www.sublimetext.com/) very sexy的编辑器
+
+[Dash](https://itunes.apple.com/cn/app/dash-docs-snippets/id458034879?mt=12) 快捷的查看API工具，可与st3和Alfred结合
+
+[iTerm2](http://www.iterm2.com/) 终端工具，搭配zsh
+
+[zsh](https://github.com/robbyrussell/oh-my-zsh/) 再见，bash
+
+[Homebrew](http://mxcl.github.io/homebrew/) 管理软件包
+
+[Git](http://git-scm.com/‎) 不解释
 
 
-#我常用的软件
+----------
 
-####日常
-[Alfred](http://www.alfredapp.com/) `快速打开程序的利器`
-
-[Evernote](http://www.evernote.com) `笔记同步，知识管理，丰富的chrome插件支持`
-
-[Mindmanager]() `强大的思维导图工具`
-
-[日历]() `Mac自带的日历工具，搭配exchange服务，所平台同步`
-
-~~[Wunderlist](https://www.wunderlist.com/) `跨平台的Todo`~~
-
-[Mou](http://mouapp.com/) `可视化Markdown编辑器`
-
-~~[Reeder](http://reederapp.com/mac/) `如其名，可与evernote集成，如果你没有赶上限免，那就可惜了`~~
-
-[AirMail](http://airmailapp.info/) `最新推出的邮件客户端，做的很用心`
-
-[Kindle](https://itunes.apple.com/us/app/kindle/id405399194?mt=12) `这个就不要多说了，这个方便做笔记`
-
-~~[Dropbox]() `云同步`~~
-
-[百度云](http://yun.baidu.com) `很好的解决了我的Mac和Windows Phone之间数据同步的问题`
-
-[Lightroom](http://www.adobe.com/support/downloads/product.jsp?platform=Macintosh&product=113) `爱好摄影不可缺少`
-
-[Photoshop](http://www.adobe.com/support/downloads/product.jsp?product=39&platform=Macintosh) `神器`
-
-
-
-
-####开发
-[Sublime Text 2](http://www.sublimetext.com/) `very sexy的编辑器`
-
-[Dash](https://itunes.apple.com/cn/app/dash-docs-snippets/id458034879?mt=12) `快捷的查看API工具，可与st2和Alfred结合`
-
-[iTerm2](http://www.iterm2.com/) `终端工具，搭配zsh`
-
-[zsh](https://github.com/robbyrussell/oh-my-zsh/) `再见，bash`
-
-[Homebrew](http://mxcl.github.io/homebrew/) `管理软件包`
-
-[Git](http://git-scm.com/‎) `不解释`
-
-[Dash](https://itunes.apple.com/cn/app/dash-docs-snippets/id458034879?mt=12) `超级好用的集合各种doc的工具，和alfred结合起来，你的mac就是IDE`
-
-
-####游戏
-
-~~War3~~ 
-
-~~机械迷城~~
-
-我已经不在Mac上玩游戏了
-
-
-
-
-
-#开发技巧
-
-> [利用Sublime Text 2 产看开源代码]({{ BASE_PATH }}/經驗分享/subl-source)
-
-> [Mac终端开发环境：iTerm2 + zsh + oh-my-zsh]({{ BASE_PATH }}/經驗分享/mac-dev-environment)
-
-
-
-###快捷键
+#快捷键
 
 `option+space` 打开alfred
 
@@ -99,23 +72,21 @@ description: 使用Mac的日常
 
 `cmd+tab`应用间切换
 
+---------
 
 
-
-
-
-###关于iTerm 2
+#iTerm 2
 
 iTerm 2 是一款替代原生系统终端工具的利器，它支持多窗口多标签的操作，同时允许用户自定义很多种主题。
 
 我喜欢的特性：
 
-####自定义主题
+###自定义主题
 在preferences -> Profiles -> Colors -> loadPresets下可以导入本地的主题文件。
 
 我使用的主题文件是：[Solarized](https://github.com/leeon/dotFiles/tree/master/res/iterm)
 
-####多窗口管理
+###多窗口管理
 我们可以使用多窗口，也可以使用多标签来操作。
 
 分割当前的窗口可以使用：
@@ -146,7 +117,7 @@ iTerm 2 是一款替代原生系统终端工具的利器，它支持多窗口多
 
 
 
-###关于zsh
+#zsh
 如果觉得每天不断的敲cd命令烦死了人，或者被各种tab扰乱，那么肯能你就是需要换一个终端环境了，那就是zsh.
 
 zsh和原来的bash相比主要的优势就是更多的人性化的操作体验，主要在命令补全方面,一些tips:
@@ -162,7 +133,7 @@ brew install zsh
 
 
 
-#### 关于oh-my-zsh
+### oh-my-zsh
 oh-my-zsh是很多程序员使用zsh的一个重要的原因，他是一个管理zsh配置的工具，提供了主题和插件等的管理，下面一段是来自其Github主页的介绍：
 
 > A community-driven framework for managing your zsh configuration. Includes 120+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, macports, etc), over 120 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community.
@@ -172,6 +143,6 @@ oh-my-zsh是很多程序员使用zsh的一个重要的原因，他是一个管�
 
 安装完成后，可以看到你的`~`目录下，多了`.oh-my-zsh`，里面包含了很多主题和插件，可以在`.zshrc`下面进行具体的配置，动手吧。
 
-####参考
+###参考
 我的配置文件放在Github上进行管理，[链接](https://github.com/leeon/dotFiles)
 
