@@ -12,11 +12,15 @@ description: 开发笔记
 + [Mac](./dev-mac.html)
 + [Sublime Text 3](./dev-subl.html)
 + [Git](./dev-git.html)
++ [Shell](./dev-shell.html)
+
+
 
 
 ##todo
 
 + [Svn]
++ [Log]
 
 
 

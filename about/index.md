@@ -1,20 +1,23 @@
 ---
 layout:     page
-title:      关于
+title:      
 description: 关于我
 ---
 
-leeon，腾讯后台工程师，独立开发者，喜欢摄影、设计和读书。
+{:.center}
+**微信扫描二维码订阅文章**
 
 
-### Where am I ###
+{:.center}
+![logo](http://cdn4atleeon.qiniudn.com/image/about/qrcode_for_gh_908b97669dca_258.jpg){:style="max-width:300px"}
 
-Code on [Github](http://www.github.com/leeon)
-, Photo on [Lofter](http://image.atleeon.com)
-, Talk on [Weibo](http://weibo.com/843168299)
-, Log on [Twitter](https://twitter.com/atleeon)
+<hr>
 
 
-### 联系 ###
+{:.center}
+其他方式
 
-atleeon(at)gmail
+{:.center}
+[Github](http://www.github.com/leeon)
+[Weibo](http://weibo.com/843168299)
+[Twitter](https://twitter.com/atleeon)

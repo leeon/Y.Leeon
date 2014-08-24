@@ -7,6 +7,11 @@ description: Linux的基本命令使用
 * 目录(this text will be scraped).
 {:toc}
 
+#管道
+管道是不得不说的Linux命令技巧，不同的命令通过管道组合起来可以实现很多方便的功能。
+
+
+
 #文件目录操作
 
 ------------------
@@ -81,9 +86,14 @@ description: Linux的基本命令使用
 ###_tail_
 与head相反，可以和head命令连用来截取部分文本查看
 
+*arguments*
+
+- *-f* 保持刷新读取
+
 例如：
 
     head -n 20 a.txt | tail -n 2  #显示文件第19行到20行
+    tail -f a.log | grep "user1"  #实时查看包含user1的日志内容
 
 
 ###_tar_
@@ -117,6 +127,11 @@ tar命令涉及两个概念，打包和压缩。
 功能和cp一样，但是可以用于远程地址目录之间的数据传输，如果不使用远程地址，它就变成cp命令了，于rsync传输相比优点是对系统io的消耗比较低
 
 `scp [options] [from] [to]`
+
+例如：
+
+    scp /path/local.log user@127.0.0.1:/home/user/path/
+
 
 
 

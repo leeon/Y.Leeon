@@ -30,35 +30,35 @@ description: 性感的编辑器
 
 ####Editing 
 
-`command + d` 多选，选择于当前选中words相同的文本
-`command + j` join lines 
-`command + 方向` 行首行尾切换
-`ctrl + j` 选择Html标签内容
+`command  d` 多选，选择于当前选中words相同的文本
+`command  j` join lines 
+`command  左右` 行首行尾切换
+`alt  左右`  光标跳到下一个或上一个单词
+`ctrl  j` 选择Html标签内容
 
-`ctrl + command + 上下` 移动某一行
+`ctrl  command  上下` 移动某一行
 
-####Instant file changing
+####Navigation
 
-`command + P` 快速的切换文件
+`command  P` 快速的切换文件
 
-`command + R` 在当前文件中切换不同的方法 == `command + P`+`@`
+`command  R` 在当前文件中切换不同的方法 == `command + P`+`@`
 
-`command + G` 切换到某一行  == `command + P`+`:`
-
+`ctrl  -` 回到上次的位置，相反命令是 `ctrl  shift  +`
  
 ####Windows and tabs
 
-`command + 数字` 快速切换到对应编号的标签页
+`command  数字` 快速切换到对应编号的标签页
 
 > sublime中每一个新的窗口成为一个group
 
-`ctrl+ 数字` 切换光标到对应编号的group
+`ctrl  数字` 切换光标到对应编号的group
 
-`alt + 数字` 将某个文件移到对应编号的组   *修改了默认 key-bindings*
+`alt  数字` 将某个文件移到对应编号的组   *修改了默认 key-bindings*
 
-`alt+ command + 数字` 将窗口分为几列 
+`alt  command  数字` 将窗口分为几列 
 
-`shift + alt + command + 数字` 将窗口分为几行
+`shift  alt  command  数字` 将窗口分为几行
 
 
 
