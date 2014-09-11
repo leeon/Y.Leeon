@@ -8,15 +8,14 @@ description: 性感的编辑器
 {:toc}
 
 
-# Start
 我使用的是Sublime Text 3
 
-###Terminal 
+#Terminal 
 可以用过软连接，将`subl`作为terminal可以识别的命令 *（for mac os only）*
     
     ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
-###Package Control
+#Package Control
 
 ` command + \`` 调出console，输入下面的代码饥即可安装
 
@@ -25,20 +24,49 @@ description: 性感的编辑器
 `shift+command+p` 调出command pannel,通过键入`install`就可以快速的安装新的包。
 
 
+#Config
 
-###Features
+我的个人配置列表
 
-####Editing 
+    {
+      "color_scheme": "Packages/User/base16-flat.dark (SL).tmTheme",
+      "draw_white_space": "all",
+      "font_face": "Ubuntu Mono",
+      "font_size": 19.0,
+      "highlight_line": true,
+      "ignored_packages":
+      [
+        "Vintage"
+      ],
+      "tab_size": 4,
+      "translate_tabs_to_spaces": true,
+      "wide_caret": true,
+      "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.d","*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", "._*", "*.class", "*.psd","*.tgz", "*.sublime-workspace"]
+    }
+
+
+
+
+#Features
+
+###Editing 
 
 `command  d` 多选，选择于当前选中words相同的文本
+
 `command  j` join lines 
+
 `command  左右` 行首行尾切换
+
+`command  shift  左右` 快速选中光标至行首\行尾的文本
+
 `alt  左右`  光标跳到下一个或上一个单词
+
 `ctrl  j` 选择Html标签内容
 
 `ctrl  command  上下` 移动某一行
 
-####Navigation
+
+###Navigation
 
 `command  P` 快速的切换文件
 
@@ -46,7 +74,7 @@ description: 性感的编辑器
 
 `ctrl  -` 回到上次的位置，相反命令是 `ctrl  shift  +`
  
-####Windows and tabs
+###Windows and tabs
 
 `command  数字` 快速切换到对应编号的标签页
 
@@ -62,7 +90,7 @@ description: 性感的编辑器
 
 
 
-### Plugins
+# Plugins
 
 插件的安装方法：
 
@@ -73,7 +101,7 @@ description: 性感的编辑器
 
 ------------
 
-####Emmet
+###Emmet
 
 一个用来快速编写前端代码的插件，采用`Zen Coding`的语法规则。
 
@@ -87,7 +115,7 @@ description: 性感的编辑器
 
 输入`ul > li*3`
 
-
+    
     <ul>
       <li></li>
       <li></li>
@@ -108,16 +136,16 @@ description: 性感的编辑器
 <a href="http://docs.emmet.io/" target=_blank>文档</a>
 
 
-####Git Gutter
+###Git Gutter
 Git增强插件，可以显示那些代码是相对于版本库变化的
 
+###Codecs33
+Sublime Text 3 编码支持插件。
 
-# Tips
+###ConvertToUTF8
+支持UTF-8 编码。
 
-> [利用Sublime Text 2 查看开源代码]() 
-
-
-# Issues
+#Issues
 
 ###有时插件失效
 

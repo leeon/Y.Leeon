@@ -55,3 +55,10 @@ description: SVN 是一款集中式的版本控制工具
     svn commit -m "delete a file from repository"
 
 
+###svn log
+打印提交记录
+
+    svn log  #显示当前目录下的所有log，从最近开始
+    svn log -l 10  #显示最近的10条提交记录
+    svn log a.c  #显示某个文件的提交记录
+    svn log > commit.log   #将log信息打印到文件里面
